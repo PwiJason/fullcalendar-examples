@@ -165,6 +165,7 @@ export default function Home() {
       initialDate={format(startOfWeek(currentDate), 'yyyy-MM-dd')}
       events={initialEvents}
       resources={resources}
+
       customButtons={{
         customPrev: {
           text: 'prev',
@@ -185,7 +186,6 @@ export default function Home() {
     initialDate={format(startOfWeek(nextWeekDate), 'yyyy-MM-dd')}
     resourceAreaWidth="150px"
     height={"auto"}
-    droppable={true}
     slotDuration={{ day: 1 }}
     duration={{ weeks: 4 }}
     headerToolbar={{
@@ -197,8 +197,9 @@ export default function Home() {
       day: 'numeric',
       weekday: 'short'
     }}
+    editable={true}
+    droppable={true}
     datesSet={handleDatesSet}
-    initialDate={format(startOfWeek(nextWeekDate), 'yyyy-MM-dd')}
     events={initialEvents}
     resources={resources}
     // ... other FullCalendar props, including events and resources
