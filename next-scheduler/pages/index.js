@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import FullCalendar from '@fullcalendar/react'
 import interactionPlugin from '@fullcalendar/interaction'
 import resourceTimelinePlugin from '@fullcalendar/resource-timeline'
-import resourceTimeGridPlugin from '@fullcalendar/resource-timegrid';
+// import resourceTimeGridPlugin from '@fullcalendar/resource-timegrid';
 import { Draggable } from '@fullcalendar/interaction';
 import { addWeeks, startOfWeek, format } from 'date-fns';
 import { subWeeks } from 'date-fns';
